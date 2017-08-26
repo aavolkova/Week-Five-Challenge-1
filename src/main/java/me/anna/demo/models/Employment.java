@@ -1,6 +1,5 @@
 package me.anna.demo.models;
 
-import com.sun.istack.internal.Nullable;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -37,7 +36,6 @@ public class Employment {
     private LocalDate startDate;
 
     // End date (employment with the organisation)
-    @Nullable
     @DateTimeFormat(pattern = "yyyy/MM/dd")
     private LocalDate endDate;
 

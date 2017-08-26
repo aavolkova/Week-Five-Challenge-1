@@ -1,7 +1,6 @@
 package me.anna.demo.models;
 
 
-import com.sun.org.glassfish.gmbal.NameValue;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -22,12 +21,10 @@ public class Person {
 
     @NotNull
     @Size(min=1, max=50, message = "Must enter your first name.")
-    @NameValue
     private String firstName;
 
     @NotEmpty
     @Size(min=1, max=50, message = "Must enter your last name.")
-    @NameValue
     private String lastName;
 
     @NotEmpty
